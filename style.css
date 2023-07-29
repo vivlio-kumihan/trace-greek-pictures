@@ -1,0 +1,32 @@
+/* Theme Name: general */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+button,
+input,
+select,
+textarea {
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+       appearance: auto;
+  border-width: 1px;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root body {
+  font-family: "Noto Sans JP", sans-serif;
+  border: none;
+}
+:root body [lang=en] {
+  font-family: "Inter", sans-serif;
+}
+:root body p {
+  font-size: 1.4rem;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+}/*# sourceMappingURL=style.css.map */
