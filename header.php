@@ -16,111 +16,131 @@
 
 <body>
   <header>
-    <header>
-      <div class="ci">
+    <!-- ロゴ -->
+    <ul class="ci">
+      <li>
         <a href="<?php echo home_url('/') ?>">
-          <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/linktopath" alt="GreekPictures"></img>
+          <img class="logo portrait" src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="GreekPicturesのロゴ"></img>
         </a>
-      </div>
+      </li>
+      <li>
+        150-0001, Tokyo Japan,<br>2-27-5 Jingumae, Shibuya-ku,
+      </li>
+    </ul>
+
+    <!-- ヘッダーのリンクメニュー -->
+    <div id="link-pages" class="link-pages">
       <?php
       wp_nav_menu(array(
-        'theme_location' => 'menu-link'
+        'theme_location' => 'link-pages'
       ))
       ?>
-      <button id="content-links-btn" class="content-links-btn">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-      <!-- <div id="menu-link" class="menu-link">
-        <?php
-        wp_nav_menu(array(
-          'theme_location' => 'menu-link'
-        ))
-        ?>
-        <a class="contact" href="">
-          <p>お問い合わせ</p>
-        </a>
-        <ul class="other-links">
-          <li><a class="shrinkLine" href="">プライバシーポリシー</a></li>
-          <li>
-            <a class="icon twitter" href=""></a>
-            <a class="icon instagram" href=""></a>
-          </li>
+    </div>
+
+    <div class="wrapper">
+      <!-- サイト表記言語の切り替え -->
+      <div class="change-lang">
+        <ul>
+          <li>Ja</li>
+          <li>En</li>
         </ul>
-      </div> -->
-    </header>
-    Menu
+      </div>
 
-    Who We Are
-    Service
-    Works
-    News
-    Company
-    Recruit
-    Contact
+      <!-- ハンバーガーメニュー・ボタン -->
+      <button id="content-links-btn" class="content-links-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-    Ja
-    En
+    <!-- コンテンツのリンクとその他のリンク　translateX=>100％ -->
+    <div id="link-contents" class="link-contents">
+      <div class="wrapper">
+        <!-- ロゴ -->
+        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="GreekPicturesのロゴ"></img>
+        <!-- コンテンツへのリンク集 -->
+        <dl class="contents">
+          <div class="none-items">
+            <dt>Top</dt>
+          </div>
+          <div class="none-items">
+            <dt>Who We Are</dt>
+          </div>
+          <div>
+            <dt>Service</dt>
+            <dd>Film &amp; Visual Design</dd>
+            <dd>Promotion</dd>
+            <dd>Media</dd>
+            <dd>Contents Business</dd>
+            <dd>Global</dd>
+            <dd>R&amp;D</dd>
+            <dd>Management</dd>
+            <dd>Others</dd>
+          </div>
+          <div class="">
+            <dt>Works</dt>
+            <dd>All</dd>
+            <dd>CM</dd>
+            <dd>MV</dd>
+            <dd>Feature Film</dd>
+            <dd>Graphic</dd>
+            <dd>Promotion</dd>
+            <dd>Character</dd>
+            <dd>Other</dd>
+            <dd>Unit</dd>
+            <dd>Director</dd>
+            <dd>Award</dd>
+          </div>
+          <div>
+            <dt>News</dt>
+            <dd>All</dd>
+            <dd>Press Release</dd>
+            <dd>Information</dd>
+            <dd>Media</dd>
+            <dd>Award</dd>
+          </div>
+          <div>
+            <dt>Company</dt>
+            <dd>Access</dd>
+          </div>
+          <div class="none-items">
+            <dt>Recruit</dt>
+          </div>
+          <div class="none-items">
+            <dt>Contact</dt>
+          </div>
+        </dl>
+        <!-- 質問 -------------------------------------------------------------- -->
+        <!-- contentsの中の各セクションをどうすればいいかわからないのでHTML要素で逃げる。 -->
+        // <?php
+            //  wp_nav_menu(array(
+            //    'theme_location' => 'link-contents'
+            //  ))
+            // 
+            ?>
+        <!-- 質問 -------------------------------------------------------------- -->
+      </div>
+    </div>
 
-    Top
-    Who We Are
+    <!-- アクセス情報　住所と電話 -->
+    <dl class="access">
+      <dt>GEEK PICTURES Head Office</dt>
+      <dd>〒150-0001<br>東京都渋谷区神宮前2-27-5</dd>
+      <dd>T：03-5879-2360　F：03-5879-2361</dd>
+    </dl>
+    <!-- SNSのリンク -->
+    <ul class="sns-links">
+      <li><a href="">Twitter</a></li>
+      <li><a href="">Facebook</a></li>
+    </ul>
 
-    Service
-    Film &amp; Visual Design
-    Promotion
-    Media
-    Contents Business
-    Global
-    R&amp;D
-    Management
-    Others
-
-    Works
-    All
-    CM
-    MV
-    Feature Film
-    Graphic
-    Promotion
-    Character
-    Other
-    Unit
-    Director
-    Award
-
-    News
-    All
-    Press Release
-    Information
-    Media
-    Award
-
-    Company
-    Access
-
-    Recruit
-    Contact
-
-    Twitter
-    Facebook
-
-    GEEK PICTURES Head Office
-    〒150-0001
-    東京都渋谷区神宮前2-27-5
-    T：03-5879-2360　F：03-5879-2361
-
-    <!-- logo画像 -->
-    GEEK PICTURES独自の知見とネットワークを活用しNFTの可能性をグローバル視点で探求し続けるプロジェクト
-
-    GEEK.NFT
-
-    GEEK PICTURESが取り組んでいる、NFT領域のコンテンツクリエイティブからマーケティング、企業支援のサービスまで、独自の知見とネットワークを活用し
-    NFTの可能性をグローバル視点で探求し続けるプロジェクト
-    上記事業の一環として運営しているNFTプラットフォームMOSAIC NATION：https://mosaic-n.com
-
-    Unexpected Powers United.
-
-    150-0001, Tokyo Japan,
-    2-27-5 Jingumae, Shibuya-ku,
+    <div class="main-title">
+      <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_nft.svg" alt="GreekPicturesのロゴ"></img>
+    </div>
+    <div class="lead-copy">
+      GEEK PICTURES独自の知見とネットワークを活用しNFTの可能性をグローバル視点で探求し続けるプロジェクト
+    </div>
+    <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_footer.svg" alt="GreekPicturesのロゴ"></img>
+    <small>Unexpected Powers United.</small>
   </header>
