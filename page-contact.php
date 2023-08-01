@@ -1,5 +1,3 @@
-<?php /* Template Name: 固定ページ　*/ ?>
-
 <h2>Contact</h2>
 <div class="wrapper">
   <div class="lead">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Theme Name: general */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -28,10 +29,161 @@ textarea {
 
 header {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header .ci {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+}
+header .ci li:first-of-type .logo.portrait {
+  width: 22px;
+}
+header .ci .adress {
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  width: 150px;
+  transform: translateX(-50%) rotate(90deg);
+  visibility: hidden;
+  opacity: 0;
+}
+header .menu-link_pages-container {
+  position: fixed;
+  top: 0;
+  right: 185px;
+}
+header .menu-link_pages-container ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .menu-link_pages-container ul li + li {
+  margin-left: 30px;
+}
+header .menu-link_pages-container ul li a {
+  display: block;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 1.2rem;
+}
+header .link-contents {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+header .other-items {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 32px;
+  right: 30px;
+}
+header .other-items .change-lang li {
+  display: inline-block;
+  color: #aaa;
+}
+header .other-items .change-lang li + li {
+  margin-left: 15px;
+}
+header .other-items .change-lang li a {
+  font-size: 12px;
+  line-height: 1.7;
+}
+header .other-items .change-lang li.active {
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+header .other-items .content-links-btn {
+  margin-left: 50px;
+  padding-bottom: 7px;
+  border: unset;
+}
+header .other-items .content-links-btn span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  content: "";
+  border-radius: 50%;
+  background-color: #333;
+}
+header .other-items .content-links-btn span + span {
+  margin-left: 1.5px;
+}
+header .cover {
+  padding-top: 100px;
+  width: 100%;
+  height: 55vh;
+  text-align: center;
+}
+header .cover .main-title {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+header .cover .lead-copy {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+header .cover .lead-copy::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  content: "→";
+  width: 20px;
+  height: 10px;
+}
+header .cover .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  margin-left: auto;
+}
+header .cover .wrapper img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+header .cover .wrapper small {
+  font-size: 1.4rem;
 }
 
 a {
   font-size: 2rem;
   line-height: 2em;
+}
+
+footer .upper {
+  display: flex;
+}
+footer .upper .logo.landscape {
+  height: 33px;
+}
+footer .upper .contents-link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .upper .contents-link ul li:first-of-type {
+  margin-bottom: 10px;
+}
+footer .upper .contents-link ul li:first-of-type a {
+  font-size: 1.6rem;
+  line-height: 1;
+  border-bottom: 1px solid #333;
+}
+footer .upper .contents-link ul li a {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */

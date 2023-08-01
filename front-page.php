@@ -114,6 +114,14 @@
   <!-- categoryと同じようにタグでやりたい -->
   <!-- とりあえずHTMLで書いて体裁を作る。 -->
   <div class="pick-up">
+    <?php
+      wp_nav_menu(array(
+        'theme_location' => 'pick-up'
+      ))
+    ?>
+  </div>
+  <!-- 
+  <div class="pick-up">
     <img src="" alt="">
     <div class="header-sub">
       <div class="category">Press Release</div>
@@ -125,6 +133,7 @@
       <div class="arrow-mark">1 - 6 <- arrow mark -></div>
     </div>
   </div>
+  -->
 </section>
 
 <!-- Serviceのページ -->

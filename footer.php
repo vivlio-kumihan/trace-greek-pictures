@@ -1,6 +1,6 @@
 <footer>
   <div class="upper">
-    <img class="logo landscape" src="" alt="GEEK PICTURESのロゴ">
+    <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_footer.svg" alt="GEEK PICTURESのロゴ">
     <div class="contents-link">
       <ul>
         <li><a href="">Who We Are</a></li>
@@ -19,7 +19,7 @@
         </li>
       </ul>
       <ul>
-        <li>Works</li>
+        <li><a href="">Works</a></li>
         <li>
           <a href="">All</a>
           <a href="">CM</a>

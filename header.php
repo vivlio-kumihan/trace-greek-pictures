@@ -20,32 +20,30 @@
     <ul class="ci">
       <li>
         <a href="<?php echo home_url('/') ?>">
-          <img class="logo portrait" src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="GreekPicturesのロゴ"></img>
+          <img class="logo portrait" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="GreekPicturesのロゴ"></img>
         </a>
       </li>
-      <li>
+      <li class="adress">
         150-0001, Tokyo Japan,<br>2-27-5 Jingumae, Shibuya-ku,
       </li>
     </ul>
 
     <!-- ヘッダーのリンクメニュー -->
-    <div id="link-pages" class="link-pages">
-      <?php
-      wp_nav_menu(array(
-        'theme_location' => 'link-pages'
-      ))
-      ?>
-    </div>
+    <!-- .menu-link_pages-container -->
+    <?php
+    wp_nav_menu(array(
+      'theme_location' => 'link-pages'
+    ))
+    ?>
 
-    <div class="wrapper">
+    <div class="other-items">
       <!-- サイト表記言語の切り替え -->
       <div class="change-lang">
         <ul>
-          <li>Ja</li>
-          <li>En</li>
+          <li class="active"><a href="">Ja</a></li>
+          <li><a href="">En</a></li>
         </ul>
       </div>
-
       <!-- ハンバーガーメニュー・ボタン -->
       <button id="content-links-btn" class="content-links-btn">
         <span></span>
@@ -54,12 +52,19 @@
       </button>
     </div>
 
-    <!-- コンテンツのリンクとその他のリンク　translateX=>100％ -->
-    <div id="link-contents" class="link-contents">
+    <div class="link-contents">
       <div class="wrapper">
         <!-- ロゴ -->
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="GreekPicturesのロゴ"></img>
         <!-- コンテンツへのリンク集 -->
+        <!-- .menu-link_contents-container -->
+        <?php
+        wp_nav_menu(array(
+          'theme_location' => 'link-contents'
+        ))
+        ?>
+        <!-- 質問　リンクとコンテンツをどうやったら描き出せるのか？ -->
+        <!--
         <dl class="contents">
           <div class="none-items">
             <dt>Top</dt>
@@ -111,36 +116,31 @@
             <dt>Contact</dt>
           </div>
         </dl>
-        <!-- 質問 -------------------------------------------------------------- -->
-        <!-- contentsの中の各セクションをどうすればいいかわからないのでHTML要素で逃げる。 -->
-        // <?php
-            //  wp_nav_menu(array(
-            //    'theme_location' => 'link-contents'
-            //  ))
-            // 
-            ?>
-        <!-- 質問 -------------------------------------------------------------- -->
+        -->
+      </div>
+      <!-- アクセス情報　住所と電話 -->
+      <dl class="access">
+        <dt>GEEK PICTURES Head Office</dt>
+        <dd>〒150-0001<br>東京都渋谷区神宮前2-27-5</dd>
+        <dd>T：03-5879-2360　F：03-5879-2361</dd>
+      </dl>
+      <!-- SNSのリンク -->
+      <ul class="sns-links">
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="cover">
+      <div class="main-title">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_nft.svg" alt="GreekPicturesのロゴ"></img>
+      </div>
+      <div class="lead-copy">
+        GEEK PICTURES独自の知見とネットワークを活用しNFTの可能性をグローバル視点で探求し続けるプロジェクト
+      </div>
+      <div class="wrapper">
+        <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_footer.svg" alt="GreekPicturesのロゴ"></img>
+        <small>Unexpected Powers United.</small>
       </div>
     </div>
-
-    <!-- アクセス情報　住所と電話 -->
-    <dl class="access">
-      <dt>GEEK PICTURES Head Office</dt>
-      <dd>〒150-0001<br>東京都渋谷区神宮前2-27-5</dd>
-      <dd>T：03-5879-2360　F：03-5879-2361</dd>
-    </dl>
-    <!-- SNSのリンク -->
-    <ul class="sns-links">
-      <li><a href="">Twitter</a></li>
-      <li><a href="">Facebook</a></li>
-    </ul>
-
-    <div class="main-title">
-      <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_nft.svg" alt="GreekPicturesのロゴ"></img>
-    </div>
-    <div class="lead-copy">
-      GEEK PICTURES独自の知見とネットワークを活用しNFTの可能性をグローバル視点で探求し続けるプロジェクト
-    </div>
-    <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_footer.svg" alt="GreekPicturesのロゴ"></img>
-    <small>Unexpected Powers United.</small>
   </header>
