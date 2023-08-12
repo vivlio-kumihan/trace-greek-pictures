@@ -1,0 +1,47 @@
+@use "../forwards" as fw
+
+.news
+  h2
+    height: 3rem
+    padding-right: 4rem
+    font-size: 1.2rem
+    line-height: 1
+    border-right: 1px solid fw.$gray
+    z-index: 2
+  .pickup-news
+    position: relative
+    overflow: hidden
+    .news-title
+      display: flex
+      align-items: center
+      position: absolute
+      bottom: 100px
+      left: 5%
+  .latest-news
+    display: flex
+    margin-top: 100px
+    padding: 0 5%
+    header
+      width: 30%
+      padding: 0
+    .contents
+      width: 70%
+      ul
+        li
+          a
+            display: flex
+            gap: 2rem
+            .frame
+              width: 25%
+              // height: 100%
+              border: 1px solid fw.$gray
+              img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            .contents
+              width: 75%
+            
+
+    
+

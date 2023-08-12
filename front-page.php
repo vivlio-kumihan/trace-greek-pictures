@@ -46,15 +46,13 @@
   </div>
 
   <a href="">
-    View All Works
+    <h2>View All Works</h2>
     <a class="see-more">More</a>
   </a>
 </section>
 
 <section id="who-we-are" class="who-we-are">
-  <p class="catch-copy">
-    動かせない世界は、ない。
-  </p>
+  <p class="catch-copy">動かせない世界は、ない。</p>
   <p class="lead-copy">
     ひとつの世界が動き出す。それは映像だ。そして、その映像が、今のリアルな現実を、世界をも動かしてゆく。それは...
   </p>
@@ -65,29 +63,30 @@
 </section>
 
 <!-- newsページ = archive page -->
-<section id="news" class="news">
+<section>
   <h2>News</h2>
   <header>
-    <!-- should do ---------------------------------------------------- -->
-    <!-- categoryを表示させる。 -->
     <ul>
-      <li>All</li>
-      <li>Press Release</li>
-      <li>Information</li>
-      <li>Media</li>
-      <li>Award</li>
+      <li><a href="/archive">All</a></li>
+      <?php
+      $categorie_list = get_categories();
+      foreach ($categorie_list as $value) {
+        echo '<li><a href="' . home_url('/') . 'category/' . $value->slug . '">' . $value->name . '</a></li>';
+      }
+      ?>
     </ul>
   </header>
-  <!-- 質問 ---------------------------------------------------- -->
   <!-- 要件
-  - headerにはgategoryがリストされている。
+  - h2下　headerにはcategoryがリストされている。
   - 全体の記事が投稿日順にリストされている。
-  - 任意のカテゴリーを選択すると、右側にそのカテゴリーの記事がリストアップされる。 -->
+  - 任意のカテゴリーを選択すると、右側にそのカテゴリーの記事一覧がリストされる。 
+  -->
   <ul class="news-archive">
     <?php
     $args = array('posts_per_page' => 5);
     $my_query = new WP_Query($args);
-    if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
+    if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+    ?>
         <li>
           <a href="<?php the_permalink(); ?>">
             <div class="frame">
@@ -107,20 +106,53 @@
             <h3><?php the_title(); ?></h3>
           </a>
         </li>
-      <?php endwhile; ?>
-    <?php endif; ?>
+    <?php endwhile;
+    endif; ?>
   </ul>
-  <hr>
+
   <!-- categoryと同じようにタグでやりたい -->
-  <!-- とりあえずHTMLで書いて体裁を作る。 -->
-  <div class="pick-up">
+  <div class="test">
     <?php
-      wp_nav_menu(array(
-        'theme_location' => 'pick-up'
-      ))
+    $args = array(
+      'post_type' => 'post',
+      'meta_query' => array(
+        array(
+          // 設定した名前
+          'key' => 'pick-up',
+          'value' => '1',
+          // 真偽値を判断している。
+          'compare' => '=',
+        ),
+      ),
+    );
+    $query = new WP_Query($args);
+    if ($query->have_posts()) {
+      while ($query->have_posts()) {
+        $query->the_post();
+        the_title();
+        the_content();
+      }
+    } else {
+      echo 'No posts found.';
+    }
     ?>
   </div>
-  <!-- 
+</section>
+
+
+<!-- // メインクエリをリセット
+  wp_reset_postdata(); -->
+
+
+<!-- とりあえずHTMLで書いて体裁を作る。 -->
+<!-- <div class="pick-up">
+    <?php
+    wp_nav_menu(array(
+      'theme_location' => 'pick-up'
+    ))
+    ?>
+  </div> -->
+<!-- 
   <div class="pick-up">
     <img src="" alt="">
     <div class="header-sub">
@@ -142,30 +174,30 @@
   <p class="lead-copy">
     TVCM・映画・ミュージックビデオなどあらゆる映像コンテンツの企画・制作をはじめ、イベント・キャンペーン・デジタルコンテンツなど、すべてのプロジェクトをワンストップでプロデュースしています。
   </p>
-  <div class="container">
-    <div class="wrapper">
-      <dl>
-        <dt><a href="">映像・グラフィック関連<br><span lang="en">Film &amp; Visual Design</span></a></dt>
-        <dd><a href="">TVやWebをはじめとしたあらゆるメディアに対応した映像を、実写、CG、アニメーションなど様々な表現を用いて制作</a></dd>
-      </dl>
+  <ul class="container">
+    <li>
+      <div>
+        <div><a href="">映像・グラフィック関連<br><span lang="en">Film &amp; Visual Design</span></a></div>
+        <div><a href="">TVやWebをはじめとしたあらゆるメディアに対応した映像を、実写、CG、アニメーションなど様々な表現を用いて制作</a></div>
+      </div>
       <a class="to-content around"></a>
-    </div>
-    <div class="wrapper">
+      </;>
+    <li>
       <dl>
         <dt>プロモーション / メディア<span lang="en">Promotion / Media</span></dt>
         <dd><a href="">プロモーション</a><br>広告キャンペーン・イベントの企画制作など</dd>
         <dd><a href="">メディア</a><br>情報媒体、プラットフォームの企画開発・運営</dd>
       </dl>
       <a class="to-content around"></a>
-    </div>
-    <div class="wrapper">
+    </li>
+    <div>
       <dl>
         <dt><a href="">コンテンツ事業<br><span lang="en">Contents Business</span></a></dt>
         <dd><a href="">キャラクターIPコンテンツ、NFT、WEB COMIC、企業サポート、クリエイターのマネージメント</a></dd>
       </dl>
       <a class="to-content around"></a>
     </div>
-    <div class="wrapper">
+    <div>
       <dl>
         <dt>海外 / R&amp;D / マネージメント / その他<span lang="en">Global / R&amp;D / Management / Others</span></dt>
         <dd>
@@ -177,7 +209,7 @@
       </dl>
       <a class="to-content around"></a>
     </div>
-  </div>
+  </ul>
 </section>
 
 <!-- Join Our Teamのページ -->
@@ -186,125 +218,124 @@
   <!-- swiperが必要 -->
   <div class="arrow-mark">1 - 6 <- arrow mark -></div>
   <!-- アコーディオンメニュー -->
-</section>
 
-<h5>Job Information</h5>
-<dl>
-  <div>
-    <dt>CM制作プロダクションマネージャー</dt>
-    <dd>
-      <dl>
-        <dt>職種</dt>
-        <dd>CM制作プロダクションマネージャー</dd>
-        <dt>勤務地</dt>
-        <dd>渋谷区神宮前/中央区銀座/渋谷区猿楽町　※いずれかになります</dd>
-        <dt>資格</dt>
-        <dd>実務経験のない方でも可<br>※実務経験のある方は優遇します。</dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ面接日を通知いたします。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
-      </dl>
-    </dd>
+  <h3>Job Information</h3>
+  <dl>
+    <div>
+      <dt>CM制作プロダクションマネージャー</dt>
+      <dd>
+        <dl>
+          <dt>職種</dt>
+          <dd>CM制作プロダクションマネージャー</dd>
+          <dt>勤務地</dt>
+          <dd>渋谷区神宮前/中央区銀座/渋谷区猿楽町　※いずれかになります</dd>
+          <dt>資格</dt>
+          <dd>実務経験のない方でも可<br>※実務経験のある方は優遇します。</dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ面接日を通知いたします。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
+        </dl>
+      </dd>
+      <a class="view-more" href="">
+        <small>応募する</small>
+        <div class="to-content fill"></div>
+      </a>
+    </div>
+    <div>
+      <dt>映像エディター</dt>
+      <dd>
+        <dl>
+          <dt>職種</dt>
+          <dd>映像エディター</dd>
+          <dt>勤務地</dt>
+          <dd>渋谷区神宮前</dd>
+          <dt>資格</dt>
+          <dd>
+            <ul>
+              <li>・実務経験1年以上</li>
+              <li>・After Effectsの実務経験</li>
+              <li>・PremiereまたはFinal Cut Proなどの映像編集ソフトの基本操作</li>
+              <li>・Photoshopの実務経験</li>
+            </ul>
+          </dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ面接日を通知いたします。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
+          <dt>業務内容</dt>
+          <dd>映像エディターとして、オフラインなどの映像編集を行います。</dd>
+        </dl>
+      </dd>
+      <a class="view-more" href="">
+        <small>応募する</small>
+        <div class="to-content fill"></div>
+      </a>
+    </div>
+    <div>
+      <dt>ビジネスプロデューサー</dt>
+      <dd>
+        <dl>
+          <dt>職種</dt>
+          <dd>ビジネスプロデューサー</dd>
+          <dt>勤務地</dt>
+          <dd>〒150-0001　東京都渋谷区神宮前2-27-5</dd>
+          <dt>資格</dt>
+          <dd>
+            <dl>
+              <dt>【業務内容】</dt>
+              <dd>
+                <ul>
+                  <li>●新規案件受注の受付窓口業務</li>
+                  <li>●新規クライアント開拓の営業活動</li>
+                  <li>●クライアント先との交渉や調整等</li>
+                </ul>
+              </dd>
+              <dt>【歓迎条件】</dt>
+              <dd>
+                <ul>
+                  <li>■セールス経験・販売経験者</li>
+                  <li>■新規開拓営業経験者</li>
+                  <li>■広告代理店営業・プロデューサー経験者</li>
+                </ul>
+              </dd>
+              <dt> 【求める人物像】</dt>
+              <dd>
+                <ul>
+                  <li>■起業家精神のある方（営業経験など）</li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ、通過の際面接日を調整させていただきます。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金）/ 交通費支給（当社規定あり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回/賞与：年1回（決算賞与）</dd>
+        </dl>
+      </dd>
+    </div>
     <a class="view-more" href="">
       <small>応募する</small>
       <div class="to-content fill"></div>
     </a>
-  </div>
-  <div>
-    <dt>映像エディター</dt>
-    <dd>
-      <dl>
-        <dt>職種</dt>
-        <dd>映像エディター</dd>
-        <dt>勤務地</dt>
-        <dd>渋谷区神宮前</dd>
-        <dt>資格</dt>
-        <dd>
-          <ul>
-            <li>・実務経験1年以上</li>
-            <li>・After Effectsの実務経験</li>
-            <li>・PremiereまたはFinal Cut Proなどの映像編集ソフトの基本操作</li>
-            <li>・Photoshopの実務経験</li>
-          </ul>
-        </dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ面接日を通知いたします。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
-        <dt>業務内容</dt>
-        <dd>映像エディターとして、オフラインなどの映像編集を行います。</dd>
-      </dl>
-    </dd>
-    <a class="view-more" href="">
-      <small>応募する</small>
-      <div class="to-content fill"></div>
-    </a>
-  </div>
-  <div>
-    <dt>ビジネスプロデューサー</dt>
-    <dd>
-      <dl>
-        <dt>職種</dt>
-        <dd>ビジネスプロデューサー</dd>
-        <dt>勤務地</dt>
-        <dd>〒150-0001　東京都渋谷区神宮前2-27-5</dd>
-        <dt>資格</dt>
-        <dd>
-          <dl>
-            <dt>【業務内容】</dt>
-            <dd>
-              <ul>
-                <li>●新規案件受注の受付窓口業務</li>
-                <li>●新規クライアント開拓の営業活動</li>
-                <li>●クライアント先との交渉や調整等</li>
-              </ul>
-            </dd>
-            <dt>【歓迎条件】</dt>
-            <dd>
-              <ul>
-                <li>■セールス経験・販売経験者</li>
-                <li>■新規開拓営業経験者</li>
-                <li>■広告代理店営業・プロデューサー経験者</li>
-              </ul>
-            </dd>
-            <dt> 【求める人物像】</dt>
-            <dd>
-              <ul>
-                <li>■起業家精神のある方（営業経験など）</li>
-              </ul>
-            </dd>
-          </dl>
-        </dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ、通過の際面接日を調整させていただきます。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金）/ 交通費支給（当社規定あり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回/賞与：年1回（決算賞与）</dd>
-      </dl>
-    </dd>
-  </div>
+  </dl>
   <a class="view-more" href="">
-    <small>応募する</small>
+    <small lang="en">More</small>
     <div class="to-content fill"></div>
   </a>
-</dl>
-<a class="view-more" href="">
-  <small lang="en">More</small>
-  <div class="to-content fill"></div>
-</a>
-
+</section>
 <!-- GEEK Communityのページ -->
 <section id="geek-community" class="geek-community">
   <h2>GEEK Community</h2>
@@ -692,5 +723,6 @@
     採用に関してのお問い合わせはこちら
   </p>
 </section>
+
 
 <?php get_footer(); ?>

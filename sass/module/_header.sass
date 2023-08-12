@@ -1,23 +1,46 @@
+@use "../forwards" as fw
+
 header
+  position: relative
   width: 100%
-  height: 55vh
+  height: 50rem
   margin: 0 auto
   padding: 0 20px
   .ci
     position: fixed
-    top: 15px
-    left: 20px
-    li:first-of-type
-      .logo.portrait
-        width: 22px
-    .adress
-      position: absolute
-      top: 115px
-      left: 50%
-      width: 150px
-      transform: translateX(-50%) rotate(90deg)
-      visibility: hidden
-      opacity: 0
+    top: 8rem
+    left: 8rem
+    width: 6rem
+    height: 8rem
+    z-index: fw.set_index(ci)
+    li
+      position: relative
+      height: 100%
+      list-style-type: none
+      a
+        display: block
+        height: 100%
+        img
+          display: block
+          margin: 0 auto
+          width: 2.6rem
+          height: 100%
+      .corp-aderss
+        display: flex
+        align-items: center
+        position: absolute
+        top: 10rem
+        width: 6rem
+        height: 16rem
+        margin: 0 auto
+        font-size: 1rem
+        line-height: 1.6
+        white-space: nowrap
+        writing-mode: vertical-rl
+        color: #ccc
+        transition: .3s
+        visibility: visible
+        opacity: 1
   .menu-link_pages-container
     position: fixed
     top: 0
@@ -105,3 +128,10 @@ header
         margin-bottom: 20px
       small
         font-size: 1.4rem
+  .page-title
+    position: absolute
+    top: 35rem
+    left: calc(50% - 35rem)
+    font-size: 2.8rem
+    line-height: 1
+    font-weight: 500

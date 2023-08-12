@@ -54,3 +54,4 @@
 <p>Here is service page</p>
 <p>Here is service page</p>
 <p>Here is service page</p>
+<?php get_footer(); ?>

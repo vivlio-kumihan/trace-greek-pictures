@@ -1,0 +1,7 @@
+@use '../../_variables' as var
+
+$break-point: (sp: 'screen and (max-width: 428px)', tab: 'screen and (min-width: 429px)', pc: 'screen and (min-width: 834px)')
+
+=media-query($bp) 
+  @media #{ map-get($break-point, $bp) }
+    @content

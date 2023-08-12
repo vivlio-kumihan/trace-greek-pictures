@@ -14,7 +14,7 @@ add_theme_support('post-thumbnails');
 function behavior_js() {
   wp_enqueue_script(
     'myScript', 
-    get_template_directory_uri().'/behavior.js', 
+    get_template_directory_uri().'/js/behavior.js', 
     array(), 
     false, 
     true
@@ -31,3 +31,4 @@ register_nav_menus(array(
   'link-contents' => 'HBMenuの各コンテンツへのリンク',
   'pick-up' => '投稿のピックアップ',
 ));
+
