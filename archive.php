@@ -18,7 +18,7 @@
           <?php the_post_thumbnail(); ?>
         </div>
         <div class="header-sub">
-          <ul class="post-categorie">
+          <ul class="post-category">
             <?php
             $category = get_the_category();
             foreach ($category as $attr) {

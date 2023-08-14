@@ -1,0 +1,8 @@
+@use '../../variables' as var
+
+=article-title($fontSize: 1.4rem, $lineHeight: 1.7em)
+  font-size: $fontSize
+  line-height: $lineHeight
+  color: var.$black-midle
+  font-feature-settings: "palt"
+  @content

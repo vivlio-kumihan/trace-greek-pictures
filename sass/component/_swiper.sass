@@ -20,7 +20,7 @@
     background-color: #fff
     &::before
       +fw.fontAwesome("\f178", 2rem)
-      color: fw.$black
+      color: fw.$black-midle
     &::after
       display: none
   .swiper-button-prev
@@ -32,7 +32,7 @@
     bottom: 25%
     width: 90vw
     height: 1px
-    background-color: fw.$gray
+    background-color: fw.$gray-deep
   .news-ul
     display: flex
     gap: 5rem
@@ -53,22 +53,27 @@
             height: 100%
             object-fit: cover
         .header-sub
-          .post-categorie
-            display: flex
-            align-items: center
+          .post-category
+            +fw.post-category($bgColor: #fff)
             margin: 3rem 0 2rem
-            li
-              font-size: 1rem
-              line-height: 1
-              &:not(:last-of-type)
-                padding: .5rem 1rem
-                background-color: #fff
-                border-radius: 1rem
-                letter-spacing: .05em
-              &:last-of-type
-                margin-left: 10px
         .article-title
-          font-size: 1.4rem
-          line-height: 1.7em
-          color: fw.$black
-          font-feature-settings: "palt"
+          +fw.article-title
+
+            // display: flex
+            // align-items: center
+            // margin: 3rem 0 2rem
+            // li
+            //   font-size: 1rem
+            //   line-height: 1
+            //   &:not(:last-of-type)
+            //     padding: .5rem 1rem
+            //     background-color: #fff
+            //     border-radius: 1rem
+            //     letter-spacing: .05em
+            //   &:last-of-type
+            //     margin-left: 10px
+        // .article-title
+        //   font-size: 1.4rem
+        //   line-height: 1.7em
+        //   color: fw.$black-midle
+        //   font-feature-settings: "palt"

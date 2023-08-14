@@ -1,26 +1,98 @@
 @use "../forwards" as fw
 
 footer
+  // height: 100vh
+  padding: 17.5rem 0 19rem
+  background-color: fw.$gray-light
   .upper
     display: flex
+    justify-content: space-between
+    padding: 0 6rem
     .logo.landscape
-      height: 33px
+      width: 20rem
+      height: 3.3rem
+      background: url(./img/logo_footer.svg) no-repeat left top
+      background-size: contain
     .contents-link
       display: grid
       grid-template-columns: repeat(4, 1fr)
+      width: calc(100% - 26rem)
       ul
         li
           &:first-of-type
+            display: inline-block
             margin-bottom: 10px
             a
+              padding-bottom: 2px
               font-size: 1.6rem
               line-height: 1
               border-bottom: 1px solid #333
+              color: fw.$black-deep
+          &.top-item
+            a
+              display: inline-block
+              font-size: 1.6rem
+              line-height: 1
+              color: fw.$black-deep
+              border-bottom: 1px solid #333
+            &:not(:last-of-type)
+              margin-top: 30px
           a
-            display: inline-block
-            margin-bottom: 10px
+            display: block
+            margin-bottom: 15px
             font-size: 1.2rem
             line-height: 1
-
-          
-    
+            color: fw.$black-light
+  .middle
+    display: flex
+    gap: 15%
+    margin-top: 9rem
+    padding: 10rem 6rem 20rem   
+    border-top: 1px solid fw.$gray-deep
+    .link-another
+      order: 2
+      ul
+        li
+          margin-bottom: 20px
+          a
+            display: inline-block
+            padding-bottom: 2px
+            font-size: 1.4rem
+            line-height: 1
+            color: fw.$black-deep
+            border-bottom: 1px solid #333
+        &.change-lang
+          display: flex
+          margin-top: 40px
+          li + li
+            margin-left: 10px
+    .link-address
+      order: 1
+      display: grid
+      grid-template-rows: repeat(2, 1fr)
+      row-gap: 30px
+      column-gap: 60px
+      grid-auto-flow: column
+      dt, dd
+        font-size: 1.2rem
+      dt
+        font-weight: 500
+      dd
+        margin-top: 10px
+        line-height: 1.5
+        color: fw.$black-light
+  .lower
+    display: flex
+    padding: 0 6rem
+    a, small
+      display: inline-block
+      font-size: 1.2rem
+      line-height: 1
+      color: fw.$black-light
+    a
+      order: 2
+      margin-left: 40px
+      padding-bottom: 2px
+      border-bottom: 1px solid fw.$black-light
+    small
+      order: 1

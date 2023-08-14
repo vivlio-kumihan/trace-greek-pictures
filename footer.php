@@ -1,6 +1,6 @@
 <footer>
   <div class="upper">
-    <img class="logo landscape" src="<?php echo get_template_directory_uri(); ?>/img/logo_footer.svg" alt="GEEK PICTURESのロゴ">
+    <div class="logo landscape"><a href=""></a></div>
     <div class="contents-link">
       <ul>
         <li><a href="">Who We Are</a></li>
@@ -36,7 +36,7 @@
       </ul>
       <div class="last-column">
         <ul>
-          <li class="top-item"><a href="">News</a></li>
+          <li><a href="">News</a></li>
           <li>
             <a href="">All</a>
             <a href="">Press Release</a>
@@ -54,47 +54,53 @@
   </div>
 
   <div class="middle">
-    <div class="wrapper">
-      <div class="sns-link">
-        <a href="">Twitter</a>
-        <a href="">Facebook</a>
-      </div>
+    <div class="link-another">
+      <ul class="sns-link">
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+      </ul>
       <!-- サイト表記言語の切り替え -->
-      <div class="change-lang">
-        <ul>
-          <li>Ja</li>
-          <li>En</li>
-        </ul>
-      </div>
+      <ul class="change-lang">
+        <li><a href="">Ja</a></li>
+        <li><a href="">En</a></li>
+      </ul>
     </div>
-    <dl class="address">
-      <dt>Head Office</dt>
-      <dd>
-        〒150-0001<br>
-        東京都渋谷区神宮前2-27-5<br>
-        T：03-5879-2360 F：03-5879-2361
-      </dd>
-      <dt>HARAJUKU Office</dt>
-      <dd>
-        〒150-0001<br>
-        東京都渋谷区神宮前2-26-8 神宮前グリーンビル<br>
-        1F,2F,3F,5F
-      </dd>
-      <dt>GINZA Office</dt>
-      <dd>
-        〒104-0061<br>
-        東京都中央区銀座8-18-11 銀座SCビル7F
-      </dd>
-      <dt>DAIKANYAMA Office</dt>
-      <dd>
-        〒150-0033<br>
-        東京都渋谷区猿楽町 10-1 マンサード代官山204
-      </dd>
+    <dl class="link-address">
+      <div>
+        <dt>Head Office</dt>
+        <dd>
+          〒150-0001<br>
+          東京都渋谷区神宮前2-27-5<br>
+          T：03-5879-2360 F：03-5879-2361
+        </dd>
+      </div>
+      <div>
+        <dt>HARAJUKU Office</dt>
+        <dd>
+          〒150-0001<br>
+          東京都渋谷区神宮前2-26-8 神宮前グリーンビル<br>
+          1F,2F,3F,5F
+        </dd>
+      </div>
+      <div>
+        <dt>GINZA Office</dt>
+        <dd>
+          〒104-0061<br>
+          東京都中央区銀座8-18-11 銀座SCビル7F
+        </dd>
+      </div>
+      <div>
+        <dt>DAIKANYAMA Office</dt>
+        <dd>
+          〒150-0033<br>
+          東京都渋谷区猿楽町 10-1 マンサード代官山204
+        </dd>
+      </div>
     </dl>
   </div>
 
   <div class="lower">
-    <small class="under-line">Privacy Policy</small>
+    <a href="">Privacy Policy</a>
     <small>
       Copyright © GEEK PICTURES Inc. All Rights Reserved.
     </small>

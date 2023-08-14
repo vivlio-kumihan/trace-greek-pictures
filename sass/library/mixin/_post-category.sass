@@ -1,0 +1,16 @@
+@use '../../variables' as var
+
+=post-category($fontSize: 1rem, $bgColor: var.$gray-light)
+  display: flex
+  align-items: center
+  @content
+  li
+    font-size: $fontSize
+    line-height: 1
+    &:not(:last-of-type)
+      padding: .5rem 1rem
+      background-color: $bgColor
+      border-radius: 1rem
+      letter-spacing: .05em
+    &:last-of-type
+      margin-left: 10px
