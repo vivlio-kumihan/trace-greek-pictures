@@ -1,0 +1,35 @@
+main .menu-bar {
+  margin: 100px auto 0;
+  width: 60%;
+  background-color: #aaa;
+}
+main .menu-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: #fff;
+}
+main .menu-bar ul li {
+  padding: 10px 20px;
+}
+main .menu-bar ul li + li {
+  margin-left: 30px;
+}
+main .menu-bar .target {
+  padding: 50px;
+  background-color: #eee;
+}
+main .menu-bar .target h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+}
+main .menu-bar .target p {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */

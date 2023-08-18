@@ -25,10 +25,10 @@ add_action('wp_enqueue_scripts', 'behavior_js');
 // コンテンツへのリンクメニューの設定
 // link-pages
 // link-contents
-// pick-up
+// pickup-news
 register_nav_menus(array(
   'link-pages' => 'ヘッダーの各ページへのリンク',
   'link-contents' => 'HBMenuの各コンテンツへのリンク',
-  'pick-up' => '投稿のピックアップ',
+  'pickup-news' => '投稿のピックアップ',
 ));
 

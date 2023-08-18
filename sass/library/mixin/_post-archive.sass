@@ -1,0 +1,166 @@
+@use '../../_variables' as var
+@use './_position-absolute-ctl' as ctl
+@use './_post-category' as pc
+@use './_article-title' as at
+
+=post-archive
+  display: flex
+  gap: 50px
+  margin: 100px 0 150px
+  padding: 0 5%
+  header
+    width: 25%
+    padding: 0
+    .check-category
+      dl
+        dt, dd
+          display: flex
+          justify-content: space-between
+          width: 100%
+          padding: 1.5rem
+          background-color: var.$gray-light
+          font-size: 1.2rem
+          line-height: 1
+          font-weight: 600
+          color: var.$black-deep
+        dt
+          border-bottom: 1px solid var.$gray-deep
+          .btn
+            font-weight: 300
+            color: var.$blue-deep
+        dd
+          padding: 1.5rem
+          ul
+            display: flex
+            flex-direction: column
+            li
+              position: relative
+              display: inline-block
+              font-weight: 100
+              color: var.$black-deep
+              cursor: pointer
+              + li
+                margin-top: 10px
+              &::after
+                +ctl.positionAbsoluteCTL($top: true)
+                content: '×'
+                right: -30px
+                color: var.$blue-deep
+      .category_list
+        padding: 30px 15px 30px 0
+        border-bottom: 1px solid var.$gray-deep
+        li
+          + li
+            margin-top: 20px
+          label
+            display: inline-block
+            position: relative
+            font-size: 1.4rem
+            line-height: 1
+            color: var.$black-light
+            &.active
+              font-weight: 900
+              color: var.$black-deep
+              &::after
+                +ctl.positionAbsoluteCTL($top: true)
+                right: -20px
+                content: '×'
+                color: var.$blue-deep
+          input
+            opacity: 0
+    .check-year
+      margin-top: 30px
+      cursor: pointer
+      transition: .3s
+      .title
+        position: relative
+        padding-left: 3rem
+        font-size: 1.4rem
+        font-weight: 300
+        &:before, &:after
+          +ctl.positionAbsoluteCTL($top: true)
+          left: 0
+          content: ''
+          width: 15px
+          height: 1px
+          background-color: var.$black-deep
+        &::after
+          left: 7.2px
+          width: 1px
+          height: 15px
+      .year-list
+        margin: 30px 0 20px
+        ul
+          display: grid
+          grid-template-columns: repeat(2, 1fr)
+          gap: 20px
+          li
+            display: inline-block
+            width: fit-content
+            &:first-of-type
+              font-weight: 900
+            a
+              font-size: 1.2rem
+              line-height: 1
+              visibility: hidden
+              opacity: 0
+    .check-year.active
+      margin-top: 50px
+      padding: 2rem
+      background-color: var.$gray-light
+      transition: .3s
+      .title
+        position: relative
+        width: 100%
+        padding: 10px 30px 30px
+        font-size: 1.4rem
+        font-weight: 300
+        border-bottom: 1px solid var.$gray-deep
+        cursor: pointer
+        &::before
+          +ctl.positionAbsoluteCTL($top: true)
+          top: 35%
+          left: 0
+          content: ''
+          width: 15px
+          height: 1px
+          background-color: var.$black-deep
+        &::after
+          visibility: hidden
+          opacity: 0
+      .year-list
+        a
+          visibility: visible
+          opacity: 1
+  .contents
+    width: 75%
+    h2
+      padding-bottom: 60px
+      border: unset
+    ul
+      .wrapper
+        padding: 50px 0
+        border-bottom: 1px solid var.$gray-deep
+        &:first-of-type
+          padding-top: 50px
+          border-top: 1px solid var.$gray-deep
+        a
+          display: flex
+          gap: 3rem
+          .frame
+            width: 25%
+            aspect-ratio: 1
+            border: 1px solid var.$gray-deep
+            img
+              width: 100%
+              height: 100%
+              object-fit: cover
+          .contents
+            width: 75%
+            padding-top: 15px
+            .header-sub
+              .post-category
+                +pc.post-category
+            .article-title
+              +at.article-title
+              margin-top: 15px

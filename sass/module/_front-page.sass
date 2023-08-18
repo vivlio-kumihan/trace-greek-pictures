@@ -1,5 +1,130 @@
 @use "../forwards" as fw
 
-a
-  font-size: 2rem
-  line-height: 2em
+:root
+  body
+    .front-page.post-archive
+      display: flex
+      gap: 50px
+      margin: 100px 0 150px
+      padding: 0 5%
+      header
+        +fw.post-archive-front-page-header
+      .contents
+        +fw.post-archive-front-page-contents
+
+:root
+  body
+    .service
+      .lead
+        padding: 0 5%
+        h2
+          +fw.heading-two
+          padding: 100px 0 50px
+        p
+          +fw.para
+          margin-bottom: 100px
+      .container
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        width: 100%
+        height: 93vh
+        li
+          position: relative
+          background: center no-repeat
+          background-size: 680% 
+          &.active dd
+            visibility: visible
+            opacity: 1
+          &.active dl
+            margin-top: 100px
+          // 課題　hoverしたら縦の罫線が全て引かれるができない。
+          // &.active + li
+          //   border: 1px solid fw.$black-middle
+          dl
+            +fw.positionAbsoluteCTL($left: true)
+            margin-top: 190px
+            color: #fff
+            z-index: 1
+            width: 100%
+            padding: 0 40px
+            transition: .5s
+            dt
+              font-size: 1.8rem
+              font-weight: 300
+              line-height: 1.2
+              [lang=en]
+                font-size: 1rem
+                line-height: 5
+            dd
+              margin-bottom: 20px
+              font-size: 1.2rem
+              font-weight: 200
+              line-height: 1.8
+              text-align: justify
+              transition: .5s
+              visibility: hidden
+              opacity: 0
+              a
+                font-size: 1.3rem
+                line-height: 1
+                font-weight: 400
+                border-bottom: 1px solid #fff
+          $picks: "img-fp-service_video.jpg", "img-fp-service_promotion.jpg", "img-fp-service_ip.jpg", "img-fp-service_other.jpg"
+          @each $p in $picks
+            $idx : index($picks, $p)
+            &:nth-of-type(#{ $idx })
+              background-image: url(./img/#{ $p })
+              &::after
+                position: absolute
+                top: 0
+                left: 0
+                content: ''
+                width: 100%
+                height: 100%
+                background-color: rgba(0, 0, 0, .5)
+                z-index: 0
+
+
+:root
+  body
+    .join-our-team
+      h2
+        +fw.heading-two
+        padding: 100px 0 50px
+      h3
+      .include-accordion
+        width: 100%
+        padding: 0 60px
+        li
+          &.active button
+            border: unset
+          button
+            display: block
+            width: 100%
+            height: 14rem
+            padding-left: 8rem
+            font-size: 1.8rem
+            line-height: 1
+            font-weight: 500
+            font-feature-settings: "palt"
+            letter-spacing: .05em
+            color: fw.$black-deep
+            border: unset
+            border-top: #ededed solid 1px
+            border-bottom: #ededed solid 1px
+            cursor: pointer
+          dl
+            dt, dd
+              font-size: 1.2rem
+              font-weight: 300
+              line-height: 1
+            dt
+              margin: 35px 0 20px
+              font-weight: 400
+              color: fw.$black-light
+              &:first-of-type
+                margin-top: 0
+            dd
+              line-height: 1.7
+
+

@@ -1,0 +1,25 @@
+@use '../../_variables' as var
+@use './_position-absolute-ctl' as ctl
+@use './_post-category' as pc
+@use './_article-title' as at
+
+=heading-two
+  position: relative
+  font-family: var.$inter
+  font-size: 2.4rem
+  font-weight: 500
+  line-height: 1
+  font-feature-settings: "palt"
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    content: ''
+    width: 25px
+    height: 1px
+    background-color: var.$black-deep
+
+=para
+  font-size: 1.4rem
+  line-height: 1.86
+  color: var.$black-middle

@@ -3,7 +3,7 @@
 <!-- 最新の投稿を10件収集する -->
 <main class="news">
   <section class="pickup-news">
-    <h2 class="news-title">Pickup news</h2>
+    <h2 class="news-title">Pickup News</h2>
     <!-- Slider main container -->
     <div class="swiper">
       <ul class="swiper-wrapper news-ul">
@@ -55,7 +55,7 @@
   <!-- 作戦
         条件にあった全ての投稿を表示させる必要がある。
         10件だけ表示させておき、more buttonをクリックして10件ずつ表示を増やしていく。 -->
-  <section class="latest-news">
+  <section class="latest-news post-archive">
     <header>
       <div class="check-category">
         <dl>
@@ -73,7 +73,6 @@
             </ul>
           </dd>
         </dl>
-
         <!-- 根本的に理解できてないからとりあえず元の書き方を置いておく。 -->
         <!--  
         <?php
@@ -119,13 +118,10 @@
           'posts_per_page' => 10,
           'paged' => $recent_page,
         );
-
         if ($selected_category !== 'all') {
           $args['category_name'] = $selected_category;
         }
-
         $my_query = new WP_Query($args);
-
         if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
         ?>
             <li class="wrapper">
@@ -162,13 +158,19 @@
       </div>
     </div>
   </section>
-  <section class="contact-us">
-    <div class="parallax-bg-img"></div>
+  <section class="contact-us parallax-frame">
+    <div class="parallax-bg-img one"></div>
     <div class="border-circle">
       <h2>Contact Us</h2>
       <p>ご依頼やご相談、<br>採用に関してのお問い合わせはこちら</p>
     </div>
   </section>
+  <!-- <section class="contact-us parallax-frame two">
+    <div class="parallax-bg-img"></div>
+  </section>
+  <section class="contact-us parallax-frame three">
+    <div class="parallax-bg-img"></div>
+  </section> -->
 </main>
 
 <?php get_footer(); ?>
