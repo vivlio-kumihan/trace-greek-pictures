@@ -30,11 +30,27 @@ links.forEach(elem => {
 
 // newsページ > swiper設定 //////////////////////////////////////////
 
-const swiper = new Swiper('.swiper', {
+const frontPageSwiper = new Swiper('.swiper.front-page', {
+  // Optional parameters
+  direction: 'horizontal',
+  // loop: true,
+  slidesPerView: 1,
+  slidesPerView: 'auto',
+  spaceBetween: 50,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
+
+const newsPageSwiper = new Swiper('.swiper.news-page', {
   // Optional parameters
   direction: 'horizontal',
   // loop: true,
   slidesPerView: 3,
+  spaceBetween: 50,
 
   // Navigation arrows
   navigation: {
@@ -47,6 +63,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 })
+
 
 
 // 全体 > Contact UsのParallax効果 ////////////////////////////////////////////
@@ -149,21 +166,21 @@ document.querySelectorAll('.parallax-frame').forEach(section => {
 // front-pageページ > Join Our Teamセクション の acodion menu ////////////////////////////////////////////////
 
 // メニューを開く関数
-const slideDown = (el) => {
-  el.style.height = 'auto' //いったんautoに
-  let h = el.offsetHeight //autoにした要素から高さを取得
-  el.style.height = h + 'px'
-  el.animate([ //高さ0から取得した高さまでのアニメーション
+const slideDown = (elem) => {
+  elem.style.height = 'auto' //いったんautoに
+  let gethight = elem.offsetHeight //autoにした要素から高さを取得
+  elem.style.height = gethight + 'px'
+  elem.animate([ //高さ0から取得した高さまでのアニメーション
     { height: 0 },
-    { height: h + 'px' }
+    { height: gethight + 'px' }
   ], {
     duration: 300, //アニメーションの時間（ms）
   })
 }
 
 // メニューを閉じる関数
-const slideUp = (el) => {
-  el.style.height = 0
+const slideUp = (elem) => {
+  elem.style.height = 0
 }
 
 let activeIndex = null //開いているアコーディオンのindex
@@ -171,15 +188,14 @@ let activeIndex = null //開いているアコーディオンのindex
 //アコーディオンコンテナ全てで実行
 const accordions = document.querySelectorAll('.include-accordion')
 accordions.forEach((accordion) => {
-
-  //アコーディオンボタン全てで実行
-  const accordionBtns = accordion.querySelectorAll('button')
-  accordionBtns.forEach((accordionBtn, idx) => {
-    accordionBtn.addEventListener('click', (e) => {
-      activeIndex = idx //クリックされたボタンを把握
-      // parentNode => button < li 
-      e.target.parentNode.classList.toggle('active') //ボタンの親要素（=ul>li)にクラスを付与／削除
-      const content = accordionBtn.nextElementSibling //ボタンの次の要素（=ul>ul）
+  //アコーディオンのトリガー全てで実行
+  const accordionTriggers = accordion.querySelectorAll('.job-type')
+  accordionTriggers.forEach((acoTrig, idx) => {
+    acoTrig.addEventListener('click', (e) => {
+      activeIndex = idx //クリックされたトリガーを把握
+      // parentNode => .job-type < li 
+      e.target.parentNode.classList.toggle('active') //トリガーの親要素（=ul>li)にクラスを付与／削除
+      const content = acoTrig.nextElementSibling //トリガーの次の要素（=ul>ul）
       if(e.target.parentNode.classList.contains('active')){
         slideDown(content) //クラス名がactive（＝閉じていた）なら上記で定義した開く関数を実行
       }else{

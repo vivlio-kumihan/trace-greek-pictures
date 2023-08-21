@@ -10,32 +10,31 @@
   font-size: 3rem
   background-color: #f5f5f5
   overflow: visible
-  .swiper-button-prev, .swiper-button-next
-    position: absolute
-    top: 82%
-    right: 5%
-    width: 6rem
-    height: 6rem
-    border-radius: 50%
-    background-color: #fff
-    &::before
-      +fw.fontAwesome("\f178", 2rem)
-      color: fw.$black-middle
-    &::after
-      display: none
-  .swiper-button-prev
-    left: 82%
-    &::before
-      +fw.fontAwesome("\f177", 2rem)
+  // .swiper-button-prev, .swiper-button-next
+  //   position: absolute
+  //   top: 82%
+  //   right: 5%
+  //   width: 6rem
+  //   height: 6rem
+  //   border-radius: 50%
+  //   background-color: #fff
+  //   &::before
+  //     +fw.fontAwesome("\f178", 2rem)
+  //     color: fw.$black-middle
+  //   &::after
+  //     display: none
+  // .swiper-button-prev
+  //   left: 82%
+  //   &::before
+  //     +fw.fontAwesome("\f177", 2rem)
   .swiper-scrollbar
     +fw.positionAbsoluteCTL($left: true)
     bottom: 25%
     width: 90vw
     height: 1px
     background-color: fw.$gray-deep
-  .news-ul
+  .swiper-wrapper
     display: flex
-    gap: 5rem
     .swiper-slide
       display: flex
       flex-direction: column
@@ -59,21 +58,20 @@
         .article-title
           +fw.article-title
 
-            // display: flex
-            // align-items: center
-            // margin: 3rem 0 2rem
-            // li
-            //   font-size: 1rem
-            //   line-height: 1
-            //   &:not(:last-of-type)
-            //     padding: .5rem 1rem
-            //     background-color: #fff
-            //     border-radius: 1rem
-            //     letter-spacing: .05em
-            //   &:last-of-type
-            //     margin-left: 10px
-        // .article-title
-        //   font-size: 1.4rem
-        //   line-height: 1.7em
-        //   color: fw.$black-midle
-        //   font-feature-settings: "palt"
+.swiper-button-prev, .swiper-button-next
+  position: absolute
+  top: 82%
+  right: 5%
+  width: 6rem
+  height: 6rem
+  border-radius: 50%
+  background-color: #fff
+  &::before
+    +fw.fontAwesome("\f178", 2rem)
+    color: fw.$black-middle
+  &::after
+    display: none
+.swiper-button-prev
+  left: 82%
+  &::before
+    +fw.fontAwesome("\f177", 2rem)

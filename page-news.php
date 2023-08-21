@@ -5,7 +5,7 @@
   <section class="pickup-news">
     <h2 class="news-title">Pickup News</h2>
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper news-page">
       <ul class="swiper-wrapper news-ul">
         <?php
         $recent_page = get_query_var('paged') ? get_query_var('paged') : 1;

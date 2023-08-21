@@ -224,115 +224,132 @@
 <!-- Join Our Teamのページ -->
 <section id="join-our-team" class="join-our-team">
   <h2>Join Our Team</h2>
-  <!-- swiperが必要 -->
-  <div class="arrow-mark">1 - 6 <- arrow mark -></div>
-
+  <div class="swiper-wrapper">
+    <div class="swiper front-page">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_1.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_2.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_3.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_4.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_5.jpg" alt=""></li>
+        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_6.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
   <h3>Job Information</h3>
   <ul class="include-accordion">
     <li>
-      <button type="button">CM制作プロダクションマネージャー</button>
-      <dl>
-        <dt>職種</dt>
-        <dd>CM制作プロダクションマネージャー</dd>
-        <dt>勤務地</dt>
-        <dd>渋谷区神宮前/中央区銀座/渋谷区猿楽町　※いずれかになります</dd>
-        <dt>資格</dt>
-        <dd>実務経験のない方でも可　※実務経験のある方は優遇します。</dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ面接日を通知いたします。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
-      </dl>
-      <a class="view-more" href="">
-        <small>応募する</small>
-        <div class="to-content fill"></div>
-      </a>
+      <h4 class="job-type">CM制作プロダクションマネージャー</h4>
+      <div class="contents">
+        <dl>
+          <dt>職種</dt>
+          <dd>CM制作プロダクションマネージャー</dd>
+          <dt>勤務地</dt>
+          <dd>渋谷区神宮前/中央区銀座/渋谷区猿楽町　※いずれかになります</dd>
+          <dt>資格</dt>
+          <dd>実務経験のない方でも可　※実務経験のある方は優遇します。</dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ面接日を通知いたします。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
+        </dl>
+        <a class="view-more" href="">
+          <small>応募する</small>
+          <div class="to-content fill"></div>
+        </a>
+      </div>
     </li>
     <li>
-      <button type="button">映像エディター</button>
-      <dl>
-        <dt>職種</dt>
-        <dd>映像エディター</dd>
-        <dt>勤務地</dt>
-        <dd>渋谷区神宮前</dd>
-        <dt>資格</dt>
-        <dd>
-          <ul>
-            <li>・実務経験1年以上</li>
-            <li>・After Effectsの実務経験</li>
-            <li>・PremiereまたはFinal Cut Proなどの映像編集ソフトの基本操作</li>
-            <li>・Photoshopの実務経験</li>
-          </ul>
-        </dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ面接日を通知いたします。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
-        <dt>業務内容</dt>
-        <dd>映像エディターとして、オフラインなどの映像編集を行います。</dd>
-      </dl>
-      <a class="view-more" href="">
-        <small>応募する</small>
-        <div class="to-content fill"></div>
-      </a>
+      <h4 class="job-type">映像エディター</h4>
+      <div class="contents">
+        <dl>
+          <dt>職種</dt>
+          <dd>映像エディター</dd>
+          <dt>勤務地</dt>
+          <dd>渋谷区神宮前</dd>
+          <dt>資格</dt>
+          <dd>
+            <ul>
+              <li>・実務経験1年以上</li>
+              <li>・After Effectsの実務経験</li>
+              <li>・PremiereまたはFinal Cut Proなどの映像編集ソフトの基本操作</li>
+              <li>・Photoshopの実務経験</li>
+            </ul>
+          </dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ面接日を通知いたします。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金） / 交通費支給（当社規定にあり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回 / 賞与：年1回（決算賞与）</dd>
+          <dt>業務内容</dt>
+          <dd>映像エディターとして、オフラインなどの映像編集を行います。</dd>
+        </dl>
+        <a class="view-more" href="">
+          <small>応募する</small>
+          <div class="to-content fill"></div>
+        </a>
+      </div>
     </li>
     <li>
-      <button type="button">ビジネスプロデューサー</button>
-      <dl>
-        <dt>職種</dt>
-        <dd>ビジネスプロデューサー</dd>
-        <dt>勤務地</dt>
-        <dd>〒150-0001　東京都渋谷区神宮前2-27-5</dd>
-        <dt>資格</dt>
-        <dd>
-          <dl>
-            <dt>【業務内容】</dt>
-            <dd>
-              <ul>
-                <li>●新規案件受注の受付窓口業務</li>
-                <li>●新規クライアント開拓の営業活動</li>
-                <li>●クライアント先との交渉や調整等</li>
-              </ul>
-            </dd>
-            <dt>【歓迎条件】</dt>
-            <dd>
-              <ul>
-                <li>■セールス経験・販売経験者</li>
-                <li>■新規開拓営業経験者</li>
-                <li>■広告代理店営業・プロデューサー経験者</li>
-              </ul>
-            </dd>
-            <dt> 【求める人物像】</dt>
-            <dd>
-              <ul>
-                <li>■起業家精神のある方（営業経験など）</li>
-              </ul>
-            </dd>
-          </dl>
-        </dd>
-        <dt>選出方法</dt>
-        <dd>書類選考のうえ、通過の際面接日を調整させていただきます。</dd>
-        <dt>待遇</dt>
-        <dd>経験・能力に応じ当社規定により優遇</dd>
-        <dt>福利厚生</dt>
-        <dd>各種社会保険完備（雇用、労災、健康、厚生年金）/ 交通費支給（当社規定あり）</dd>
-        <dt>昇給 / 賞与</dt>
-        <dd>昇給：年1回/賞与：年1回（決算賞与）</dd>
-      </dl>
+      <h4 class="job-type">ビジネスプロデューサー</h4>
+      <div class="contents">
+        <dl>
+          <dt>職種</dt>
+          <dd>ビジネスプロデューサー</dd>
+          <dt>勤務地</dt>
+          <dd>〒150-0001　東京都渋谷区神宮前2-27-5</dd>
+          <dt>資格</dt>
+          <dd>
+            <dl>
+              <dt>【業務内容】</dt>
+              <dd>
+                <ul>
+                  <li>●新規案件受注の受付窓口業務</li>
+                  <li>●新規クライアント開拓の営業活動</li>
+                  <li>●クライアント先との交渉や調整等</li>
+                </ul>
+              </dd>
+              <dt>【歓迎条件】</dt>
+              <dd>
+                <ul>
+                  <li>■セールス経験・販売経験者</li>
+                  <li>■新規開拓営業経験者</li>
+                  <li>■広告代理店営業・プロデューサー経験者</li>
+                </ul>
+              </dd>
+              <dt> 【求める人物像】</dt>
+              <dd>
+                <ul>
+                  <li>■起業家精神のある方（営業経験など）</li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>選出方法</dt>
+          <dd>書類選考のうえ、通過の際面接日を調整させていただきます。</dd>
+          <dt>待遇</dt>
+          <dd>経験・能力に応じ当社規定により優遇</dd>
+          <dt>福利厚生</dt>
+          <dd>各種社会保険完備（雇用、労災、健康、厚生年金）/ 交通費支給（当社規定あり）</dd>
+          <dt>昇給 / 賞与</dt>
+          <dd>昇給：年1回/賞与：年1回（決算賞与）</dd>
+        </dl>
+        <a class="view-more" href="">
+          <small>応募する</small>
+          <div class="to-content fill"></div>
+        </a>
+      </div>
     </li>
-
-    <a class="view-more" href="">
-      <small>応募する</small>
-      <div class="to-content fill"></div>
-    </a>
   </ul>
   <a class="view-more" href="">
     <small lang="en">More</small>
@@ -342,6 +359,203 @@
 <!-- GEEK Communityのページ -->
 <section id="geek-community" class="geek-community">
   <h2>GEEK Community</h2>
+  <div class="swiper geek-community">
+    <dl class="swiper-wrapper">
+      <div>
+        <dt class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
+          <h4>GEEK PICTURES Division</h4>
+          <div class="category">Unit</div>
+        </dt>
+        <dd>
+          <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
+          <h4>GEEK PICTURES Division</h4>
+          <div class="out-line">映像コンテンツのプロデュース</div>
+          <p>TVCMのほかマルチメディアにおける映像コンテンツのプロデュースを行っています。お客様との連携でメディアや視聴環境に合った映像コンテンツのプロデュースを実行します。</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+      <div>
+        <dt class="swiper-slide">
+
+        </dt>
+        <dd>
+
+        </dd>
+      </div>
+    </dl>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+  </div>
   <h3>Unit</h3>
   <dl>
     <div>
