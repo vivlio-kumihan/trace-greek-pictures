@@ -186,7 +186,7 @@
       <dl>
         <a href="">
           <dt>映像・グラフィック関連<br><span lang="en">Film &amp; Visual Design</span></dt>
-          <dd>TVやWebをはじめとしたあらゆるメディアに対応した映像を、実写、CG、アニメーションなど様々な表現を用いて制作</dd>
+          <div class="contents">TVやWebをはじめとしたあらゆるメディアに対応した映像を、実写、CG、アニメーションなど様々な表現を用いて制作</div>
         </a>
       </dl>
       <a class="to-content circle"></a>
@@ -224,18 +224,15 @@
 <!-- Join Our Teamのページ -->
 <section id="join-our-team" class="join-our-team">
   <h2>Join Our Team</h2>
-  <div class="swiper-wrapper">
-    <div class="swiper front-page">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_1.jpg" alt=""></li>
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_2.jpg" alt=""></li>
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_3.jpg" alt=""></li>
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_4.jpg" alt=""></li>
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_5.jpg" alt=""></li>
-        <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_6.jpg" alt=""></li>
-      </ul>
-    </div>
-    <div class="swiper-pagination"></div>
+  <div class="swiper front-page">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_1.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_2.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_3.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_4.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_5.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/join_6.jpg" alt=""></li>
+    </ul>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
@@ -356,582 +353,301 @@
     <div class="to-content fill"></div>
   </a>
 </section>
+
 <!-- GEEK Communityのページ -->
 <section id="geek-community" class="geek-community">
   <h2>GEEK Community</h2>
   <div class="swiper geek-community">
-    <dl class="swiper-wrapper">
-      <div>
-        <dt class="swiper-slide">
-          <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
-          <h4>GEEK PICTURES Division</h4>
-          <div class="category">Unit</div>
-        </dt>
-        <dd>
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <h3>Unit</h3>
+        <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
+        <h4>GEEK PICTURES Division</h4>
+        <div class="category">Unit</div>
+        <div class="contents">
           <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
           <h4>GEEK PICTURES Division</h4>
           <div class="out-line">映像コンテンツのプロデュース</div>
           <p>TVCMのほかマルチメディアにおける映像コンテンツのプロデュースを行っています。お客様との連携でメディアや視聴環境に合った映像コンテンツのプロデュースを実行します。</p>
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-      <div>
-        <dt class="swiper-slide">
-
-        </dt>
-        <dd>
-
-        </dd>
-      </div>
-    </dl>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
-  </div>
-  <h3>Unit</h3>
-  <dl>
-    <div>
-      <dt>
-        <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
-        <h4>GEEK PICTURES Division</h4>
-        <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/division-426x426.jpg" alt="">
-        <h4>GEEK PICTURES Division</h4>
-        <div class="out-line">映像コンテンツのプロデュース</div>
-        <p>TVCMのほかマルチメディアにおける映像コンテンツのプロデュースを行っています。お客様との連携でメディアや視聴環境に合った映像コンテンツのプロデュースを実行します。</p>
-      </dd>
-    </div>
-    <div>
-      <dt>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-geekpark-426x426.jpg" alt="">
         <h4>geekpark</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-geekpark-426x426.jpg" alt="">
-        <h4>geekpark</h4>
-        <div class="out-line">映像・グラフィックなど全ジャンルのプロデュース業務</div>
-        <p>映像・グラフィックなどを手がけるプロデュースチーム。広告からエンターテインメントまで、ジャンルの壁を越えた包括的なプロデュースを実行します。</p>
-        <p>https://geekpark.tokyo</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-geekpark-426x426.jpg" alt="">
+          <h4>geekpark</h4>
+          <div class="out-line">映像・グラフィックなど全ジャンルのプロデュース業務</div>
+          <p>映像・グラフィックなどを手がけるプロデュースチーム。広告からエンターテインメントまで、ジャンルの壁を越えた包括的なプロデュースを実行します。</p>
+          <p>https://geekpark.tokyo</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gcs-426x426.jpg" alt="">
         <h4>GEEK CREATIVE STUDIO</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gcs-426x426.jpg" alt="">
-        <h4>GEEK CREATIVE STUDIO</h4>
-        <div class="out-line">マルチメディアのエンターテインメントコンテンツの企画・プロデュース業務</div>
-        <p>プランナー、ディレクターを有し、マルチメディアにおけるエンターテインメントコンテンツをプロデュースするプロフェッショナル集団。お客様の課題解決を最適な形で提供しています。</p>
-        <p>https://cs.geekpictures.co.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gcs-426x426.jpg" alt="">
+          <h4>GEEK CREATIVE STUDIO</h4>
+          <div class="out-line">マルチメディアのエンターテインメントコンテンツの企画・プロデュース業務</div>
+          <p>プランナー、ディレクターを有し、マルチメディアにおけるエンターテインメントコンテンツをプロデュースするプロフェッショナル集団。お客様の課題解決を最適な形で提供しています。</p>
+          <p>https://cs.geekpictures.co.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/965aae056635da14f8a464ea714d7188-1-426x426.jpg" alt="">
         <h4>GEEK DESIGN</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/965aae056635da14f8a464ea714d7188-1-426x426.jpg" alt="">
-        <h4>GEEK DESIGN</h4>
-        <div class="out-line">デザインのプロデュース業務</div>
-        <p>デザインに特化したプロデュースチーム。グラフィックのプロデュースのほか、マルチメディアにおけるエンターテインメントコンテンツのデザイン領域を担っています。</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/965aae056635da14f8a464ea714d7188-1-426x426.jpg" alt="">
+          <h4>GEEK DESIGN</h4>
+          <div class="out-line">デザインのプロデュース業務</div>
+          <p>デザインに特化したプロデュースチーム。グラフィックのプロデュースのほか、マルチメディアにおけるエンターテインメントコンテンツのデザイン領域を担っています。</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/MP-426x426.jpg" alt="">
         <h4>MEDIA PROMOTION</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/MP-426x426.jpg" alt="">
-        <h4>MEDIA PROMOTION</h4>
-        <div class="out-line">イベント及び自社メディアの企画・プロデュース業務</div>
-        <p>お客様の課題解決に沿ったイベントプロデュースのほか、当社発のメディアの企画・プロデュースを手がけています。</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/MP-426x426.jpg" alt="">
+          <h4>MEDIA PROMOTION</h4>
+          <div class="out-line">イベント及び自社メディアの企画・プロデュース業務</div>
+          <p>お客様の課題解決に沿ったイベントプロデュースのほか、当社発のメディアの企画・プロデュースを手がけています。</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gw-426x426.jpg" alt="">
         <h4>GEEK WONDERS</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gw-426x426.jpg" alt="">
-        <h4>GEEK WONDERS</h4>
-        <div class="out-line">キャラクターIPコンテンツ・NFT・WEBCOMIC・企業サポート、クリエイターのマネージメント</div>
-        <p>キャラクターIPコンテンツをはじめ NFTやWEBCOMIC、クリエイターマネージメント、 その知見を活かした企業サポートなど コンテンツの新たな可能性を日々追求しながら事業展開しています。</p>
-        <p>https://geekwonders.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-gw-426x426.jpg" alt="">
+          <h4>GEEK WONDERS</h4>
+          <div class="out-line">キャラクターIPコンテンツ・NFT・WEBCOMIC・企業サポート、クリエイターのマネージメント</div>
+          <p>キャラクターIPコンテンツをはじめ NFTやWEBCOMIC、クリエイターマネージメント、 その知見を活かした企業サポートなど コンテンツの新たな可能性を日々追求しながら事業展開しています。</p>
+          <p>https://geekwonders.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-palvlov-426x426.jpg" alt="">
         <h4>PAVLOV.</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-palvlov-426x426.jpg" alt="">
-        <h4>PAVLOV.</h4>
-        <div class="out-line">音楽の企画・プロデュース業務</div>
-        <p>音楽のプロデュースユニット。広告分野に限らず、マルチメディアのエンターテインメントコンテンツの音楽領域のプロデュースを担っています。</p>
-        <p>http://pavlov.co.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-palvlov-426x426.jpg" alt="">
+          <h4>PAVLOV.</h4>
+          <div class="out-line">音楽の企画・プロデュース業務</div>
+          <p>音楽のプロデュースユニット。広告分野に限らず、マルチメディアのエンターテインメントコンテンツの音楽領域のプロデュースを担っています。</p>
+          <p>http://pavlov.co.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-direction-426x426.jpg" alt="">
         <h4>DIRECTION</h4>
         <div class="category">Unit</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-direction-426x426.jpg" alt="">
-        <h4>DIRECTION</h4>
-        <div class="out-line">企画演出業務</div>
-        <p>映像コンテンツの企画演出を行うユニット。早くから様々な作品に携わり、多くの実績を有する若く才能あるメンバーも所属します。</p>
-      </dd>
-    </div>
-  </dl>
-
-  <h3>Group Company</h3>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/geekpictures-direction-426x426.jpg" alt="">
+          <h4>DIRECTION</h4>
+          <div class="out-line">企画演出業務</div>
+          <p>映像コンテンツの企画演出を行うユニット。早くから様々な作品に携わり、多くの実績を有する若く才能あるメンバーも所属します。</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <h3>Group Company</h3>
         <img src="<?php echo get_template_directory_uri() ?>/img/group-gs-426x426.jpg" alt="">
         <h4>geek sight inc.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-gs-426x426.jpg" alt="">
-        <h4>geek sight inc.</h4>
-        <div class="out-line">映画のプロデュース・ポストプロダクション業務</div>
-        <p>映画の制作プロダクションとして、大型作品を含む複数の作品を手がけています。一方でポストプロダクションも有しており、映画、テレビ番組、MV、CMの編集を手がけています。</p>
-        <p>https://geeksight.co.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-gs-426x426.jpg" alt="">
+          <h4>geek sight inc.</h4>
+          <div class="out-line">映画のプロデュース・ポストプロダクション業務</div>
+          <p>映画の制作プロダクションとして、大型作品を含む複数の作品を手がけています。一方でポストプロダクションも有しており、映画、テレビ番組、MV、CMの編集を手がけています。</p>
+          <p>https://geeksight.co.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-gt-426x426.jpg" alt="">
         <h4>GEEK TOYS Inc.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-gt-426x426.jpg" alt="">
-        <h4>GEEK TOYS Inc.</h4>
-        <div class="out-line">アニメーションのプロデュース業務</div>
-        <p>アニメーションスタジオ。既存の制作手法にとらわれることなく、常に新しい技術と工夫で、世界中の人々に感動と驚きを与える映像表現を目指しています。</p>
-        <p>https://geektoys.co.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-gt-426x426.jpg" alt="">
+          <h4>GEEK TOYS Inc.</h4>
+          <div class="out-line">アニメーションのプロデュース業務</div>
+          <p>アニメーションスタジオ。既存の制作手法にとらわれることなく、常に新しい技術と工夫で、世界中の人々に感動と驚きを与える映像表現を目指しています。</p>
+          <p>https://geektoys.co.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-rgp-426x426.jpg" alt="">
         <h4>RED GEEK PICTURES INC.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-rgp-426x426.jpg" alt="">
-        <h4>RED GEEK PICTURES INC.</h4>
-        <div class="out-line">CG、空間演出の企画・プロデュース業務</div>
-        <p>中国・日本を含むアジアを中心に活動するクリエイティブチーム。国内外の映像コンテンツでCGや空間演出の企画・プロデュースを手がけています。</p>
-        <p>https://www.red-asia.com</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-rgp-426x426.jpg" alt="">
+          <h4>RED GEEK PICTURES INC.</h4>
+          <div class="out-line">CG、空間演出の企画・プロデュース業務</div>
+          <p>中国・日本を含むアジアを中心に活動するクリエイティブチーム。国内外の映像コンテンツでCGや空間演出の企画・プロデュースを手がけています。</p>
+          <p>https://www.red-asia.com</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-nv-426x426.jpg" alt="">
         <h4>Nouvelle Vague Co., Ltd.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-nv-426x426.jpg" alt="">
-        <h4>Nouvelle Vague Co., Ltd.</h4>
-        <div class="out-line">映像美術のデザイン・企画・プロデュース業務</div>
-        <p>映画、CM、店舗などの美術のプロデュース・デザインを行うアートプロダクション。デザインから設計・施工までを一手に担い、25年以上にわたって業界の第一線で活躍しています。</p>
-        <p>https://www.nv-art.co.jp/nouvellevague/</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-nv-426x426.jpg" alt="">
+          <h4>Nouvelle Vague Co., Ltd.</h4>
+          <div class="out-line">映像美術のデザイン・企画・プロデュース業務</div>
+          <p>映画、CM、店舗などの美術のプロデュース・デザインを行うアートプロダクション。デザインから設計・施工までを一手に担い、25年以上にわたって業界の第一線で活躍しています。</p>
+          <p>https://www.nv-art.co.jp/nouvellevague/</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-nestvisual-426x426.jpg" alt="">
         <h4>NestVisual Co., Ltd.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-nestvisual-426x426.jpg" alt="">
-        <h4>NestVisual Co., Ltd.</h4>
-        <div class="out-line">デジタルコンテンツの開発、制作</div>
-        <p>「映像コンテンツ」と「テクノロジー」の融合による高品質な映像表現を目指し、「XR(VR/AR/MR）」「インタラクティブシステム」「プロジェクションマッピング」など、様々なデジタルコンテンツの開発、制作に携わっています。</p>
-        <p>https://www.nest-vis.com/</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-nestvisual-426x426.jpg" alt="">
+          <h4>NestVisual Co., Ltd.</h4>
+          <div class="out-line">デジタルコンテンツの開発、制作</div>
+          <p>「映像コンテンツ」と「テクノロジー」の融合による高品質な映像表現を目指し、「XR(VR/AR/MR）」「インタラクティブシステム」「プロジェクションマッピング」など、様々なデジタルコンテンツの開発、制作に携わっています。</p>
+          <p>https://www.nest-vis.com/</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-tscp-426x426.jpg" alt="">
         <h4>TOCHIGI STUDIO CITY PLANNING Inc.</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-tscp-426x426.jpg" alt="">
-        <h4>TOCHIGI STUDIO CITY PLANNING Inc.</h4>
-        <div class="out-line">実用サイズのスクランブル交差点のオープンセットの運営業務</div>
-        <p>当社グループ会社Nouvelle Vagueが開設した実用サイズのスクランブル交差点のオープンセット「足利スクランブルシティスタジオ」の運営を行っています。</p>
-        <p>https://ashikaga-scramble.com</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-tscp-426x426.jpg" alt="">
+          <h4>TOCHIGI STUDIO CITY PLANNING Inc.</h4>
+          <div class="out-line">実用サイズのスクランブル交差点のオープンセットの運営業務</div>
+          <p>当社グループ会社Nouvelle Vagueが開設した実用サイズのスクランブル交差点のオープンセット「足利スクランブルシティスタジオ」の運営を行っています。</p>
+          <p>https://ashikaga-scramble.com</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/group-capsule-426x426.jpg" alt="">
         <h4>CAPSULE</h4>
         <div class="category">Group Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/group-capsule-426x426.jpg" alt="">
-        <h4>CAPSULE</h4>
-        <div class="out-line">レンタルシアターの運営業務</div>
-        <p>原宿のレンタルシアター。新鋭映像作家の発掘や、サブカルチャーからメジャーへのステップアップの活動拠点、さらには劇場の枠を超えた映像文化情報のサイトを構築しています。</p>
-        <p>https://capsule-theater.jp</p>
-      </dd>
-    </div>
-  </dl>
-
-  <h3>Creative Brand</h3>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/group-capsule-426x426.jpg" alt="">
+          <h4>CAPSULE</h4>
+          <div class="out-line">レンタルシアターの運営業務</div>
+          <p>原宿のレンタルシアター。新鋭映像作家の発掘や、サブカルチャーからメジャーへのステップアップの活動拠点、さらには劇場の枠を超えた映像文化情報のサイトを構築しています。</p>
+          <p>https://capsule-theater.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <h3>Creative Brand</h3>
         <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-voyager-426x426.jpg" alt="">
         <h4>VOYAGER</h4>
         <div class="category">Creative Brand</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-voyager-426x426.jpg" alt="">
-        <h4>VOYAGER</h4>
-        <div class="out-line">クリエイターのマネージメント業務</div>
-        <p>クリエイターのマネージメントオフィス。マネージメントに留まらずクリエイターの発掘も行っています。現在、国内外のディレクター、カメラマンなどの精鋭たちが活躍中です。</p>
-        <p>https://www.vyg.jp</p>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-voyager-426x426.jpg" alt="">
+          <h4>VOYAGER</h4>
+          <div class="out-line">クリエイターのマネージメント業務</div>
+          <p>クリエイターのマネージメントオフィス。マネージメントに留まらずクリエイターの発掘も行っています。現在、国内外のディレクター、カメラマンなどの精鋭たちが活躍中です。</p>
+          <p>https://www.vyg.jp</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-zc-426x426.jpg" alt="">
         <h4>ZEN creative</h4>
         <div class="category">Creative Brand</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-zc-426x426.jpg" alt="">
-        <h4>ZEN creative</h4>
-        <div class="out-line">クリエイターのマネージメント業務</div>
-        <p>クリエイターのマネージメントオフィス。フィルムディレクター、カメラマン、スタイリスト、メーキャップアーティストなど様々なクリエイターが在籍しています。</p>
-        <a href="https://zencreative.jp">https://zencreative.jp</a>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-zc-426x426.jpg" alt="">
+          <h4>ZEN creative</h4>
+          <div class="out-line">クリエイターのマネージメント業務</div>
+          <p>クリエイターのマネージメントオフィス。フィルムディレクター、カメラマン、スタイリスト、メーキャップアーティストなど様々なクリエイターが在籍しています。</p>
+          <a href="https://zencreative.jp">https://zencreative.jp</a>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-beyond-426x426.jpg" alt="">
         <h4>Beyond</h4>
         <div class="category">Creative Brand</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-beyond-426x426.jpg" alt="">
-        <h4>Beyond</h4>
-        <div class="out-line">プロデューサーユニット</div>
-        <p>広告・映像のプロデューサーの可能性を広げ、実現するために集まったプロデューサーユニットです。</p>
-        <a href="https://unit-beyond.tokyo">https://unit-beyond.tokyo</a>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/creativebrand-beyond-426x426.jpg" alt="">
+          <h4>Beyond</h4>
+          <div class="out-line">プロデューサーユニット</div>
+          <p>広告・映像のプロデューサーの可能性を広げ、実現するために集まったプロデューサーユニットです。</p>
+          <a href="https://unit-beyond.tokyo">https://unit-beyond.tokyo</a>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/logo_50-426x426.jpg" alt="">
         <h4>WASH</h4>
         <div class="category">Creative Brand</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/logo_50-426x426.jpg" alt="">
-        <h4>WASH</h4>
-        <div class="out-line">クリエイターのマネージメント業務</div>
-        <p>クリエイターのマネージメントオフィス。<br>自分を磨き続けるという意味で立ち上げられたWASHは、「新しい選択」となる若手クリエイターが所属しています。</p>
-      </dd>
-    </div>
-  </dl>
-
-  <h3>Global</h3>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/logo_50-426x426.jpg" alt="">
+          <h4>WASH</h4>
+          <div class="out-line">クリエイターのマネージメント業務</div>
+          <p>クリエイターのマネージメントオフィス。<br>自分を磨き続けるという意味で立ち上げられたWASHは、「新しい選択」となる若手クリエイターが所属しています。</p>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <h3>Global</h3>
         <img src="<?php echo get_template_directory_uri() ?>/img/global-shanghai-426x426.jpg" alt="">
         <h4>GEEK PICTURES SHANGHAI INC.</h4>
         <div class="category">Global</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/global-shanghai-426x426.jpg" alt="">
-        <h4>GEEK PICTURES SHANGHAI INC.</h4>
-        <div class="out-line">海外拠点・上海</div>
-        <p>中国・上海を拠点とし、RED GEEK PICTURESとともに中国大陸全土、中華圏にて東京本社と同様のクオリティ&amp;サービスで映像制作を行います。日本のクリエイターの中国におけるマネージメント業務も行っています。</p>
-        <a href="https://www.red-asia.com">https://www.red-asia.com</a>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/global-shanghai-426x426.jpg" alt="">
+          <h4>GEEK PICTURES SHANGHAI INC.</h4>
+          <div class="out-line">海外拠点・上海</div>
+          <p>中国・上海を拠点とし、RED GEEK PICTURESとともに中国大陸全土、中華圏にて東京本社と同様のクオリティ&amp;サービスで映像制作を行います。日本のクリエイターの中国におけるマネージメント業務も行っています。</p>
+          <a href="https://www.red-asia.com">https://www.red-asia.com</a>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/global-pvt-426x426.jpg" alt="">
         <h4>GEEK PICTURES Pvt.Ltd.</h4>
         <div class="category">Global</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/global-pvt-426x426.jpg" alt="">
-        <h4>GEEK PICTURES Pvt.Ltd.</h4>
-        <div class="out-line">海外拠点・インド</div>
-        <p>メイド・イン・トウキョウの映像制作クオリティを提供する拠点です。</p>
-        <a href="https://geekpictures.in">https://geekpictures.in</a>
-      </dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/global-pvt-426x426.jpg" alt="">
+          <h4>GEEK PICTURES Pvt.Ltd.</h4>
+          <div class="out-line">海外拠点・インド</div>
+          <p>メイド・イン・トウキョウの映像制作クオリティを提供する拠点です。</p>
+          <a href="https://geekpictures.in">https://geekpictures.in</a>
+        </div>
+      </li>
+      <li class="swiper-slide">
         <img src="<?php echo get_template_directory_uri() ?>/img/global-bangkok-426x426.jpg" alt="">
         <h4>GEEK PICTURES BANGKOK</h4>
         <div class="category">Global</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/global-bangkok-426x426.jpg" alt="">
-        <h4>GEEK PICTURES BANGKOK</h4>
-        <div class="out-line">海外拠点・バンコク</div>
-        <p>2022年3月1日より、GEEK PICTURES SINGAPOREはGEEK PICTURES BANGKOKに併合しました。東南アジアの拠点を発展が著しいバンコクに集約することで、より効率的で高クオリティなサービスを提供します。</p>
-        <a href="https://geekpictures.co.jp/bangkok/">https://geekpictures.co.jp/bangkok/</a>
-      </dd>
-    </div>
-  </dl>
-
-  <h3>Affiliated Company</h3>
-  <dl>
-    <div>
-      <dt>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/global-bangkok-426x426.jpg" alt="">
+          <h4>GEEK PICTURES BANGKOK</h4>
+          <div class="out-line">海外拠点・バンコク</div>
+          <p>2022年3月1日より、GEEK PICTURES SINGAPOREはGEEK PICTURES BANGKOKに併合しました。東南アジアの拠点を発展が著しいバンコクに集約することで、より効率的で高クオリティなサービスを提供します。</p>
+          <a href="https://geekpictures.co.jp/bangkok/">https://geekpictures.co.jp/bangkok/</a>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <h3>Affiliated Company</h3>
         <img src="<?php echo get_template_directory_uri() ?>/img/affiliated-vt-426x426.jpg" alt="">
         <h4>VISUALMAN TOKYO Inc.</h4>
         <div class="category">Affiliated Company</div>
-      </dt>
-      <dd>
-        <img src="<?php echo get_template_directory_uri() ?>/img/affiliated-vt-426x426.jpg" alt="">
-        <h4>VISUALMAN TOKYO Inc.</h4>
-        <div class="out-line">CG・VFXのプロデュース・制作業務</div>
-        <p>映画、CM などにおいて、ハイレベルなCG・VFX を提供する経験豊富なプロダクションです。TOKYO を起点として世界の映像制作のHUB(拠点)になることを目指しています。</p>
-        <a href="">https://visualman.tokyo</a>
-      </dd>
+        <div class="contents">
+          <img src="<?php echo get_template_directory_uri() ?>/img/affiliated-vt-426x426.jpg" alt="">
+          <h4>VISUALMAN TOKYO Inc.</h4>
+          <div class="out-line">CG・VFXのプロデュース・制作業務</div>
+          <p>映画、CM などにおいて、ハイレベルなCG・VFX を提供する経験豊富なプロダクションです。TOKYO を起点として世界の映像制作のHUB(拠点)になることを目指しています。</p>
+          <a href="">https://visualman.tokyo</a>
+        </div>
+      </li>
+    </ul>
+    <div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-  </dl>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+  </div>
   <a class="view-more" href="">
     <small lang="en">More</small>
     <div class="to-content fill"></div>
   </a>
 </section>
-
 
 <section id="contact" class="contact">
   <h2>Contact Us</h2>

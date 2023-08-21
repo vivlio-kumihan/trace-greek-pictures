@@ -87,33 +87,35 @@
 :root
   body
     .join-our-team
+      overflow: hidden
       h2
         +fw.heading-two
         margin: 200px auto 0
         padding: 100px 20% 50px
+        z-index: 0
         &::before
           left: 200px
-      .swiper-wrapper
+      .swiper
+        justify-content: flex-start
         position: relative
-        .swiper
-          justify-content: flex-start
+        width: 100%
+        height: unset
+        padding-left: 20%
+        background-color: #fff
+        .swiper-wrapper
           width: 100%
-          height: unset
-          padding-left: 20%
-          background-color: #fff
-          overflow: hidden
-          .swiper-wrapper
-            .swiper-slide
-              width: 60vw
-              height: 35vw
-              img
-                width: 100%
-                height: 100%
-                object-fit: cover
+          .swiper-slide
+            width: 60vw
+            height: 35vw
+            img
+              width: 100%
+              height: 100%
+              object-fit: cover
         .swiper-button-prev, .swiper-button-next
           position: absolute
           top: -70px
           border: 1px solid fw.$gray-deep
+          z-index: 100
         .swiper-button-prev
           left: 67%
         .swiper-button-next
@@ -227,17 +229,70 @@
 :root
   body
     .geek-community
+      overflow: hidden
       h2
         +fw.heading-two
         margin: 200px auto 0
-        padding: 100px 5% 50px
+        padding: 100px 5% 80px
+        z-index: 0
         &::before
           left: 5%
-      h3
-      dl
-        div
-          dt
-          dd
-            transition: .5s
-            visibility: hidden
-            opacity: 0
+      .swiper.geek-community
+        justify-content: flex-start
+        align-items: flex-start
+        position: relative
+        width: 100%
+        height: 50vh
+        padding: 0 0 0 5%
+        background-color: unset
+        overflow: visible
+        .swiper-wrapper
+          .swiper-slide
+            position: relative
+            width: 100%
+            h3
+              position: absolute
+              top: -30px
+              left: 0
+              font-size: 1.2rem
+            img
+              width: 100%
+              aspect-ratio: 1
+              object-fit: cover
+              border: 1px solid fw.$gray-deep
+            h4
+              position: relative
+              padding: 25px 0 8px 15px
+              font-size: 1.4rem
+              font-weight: 400
+              line-height: 1
+              &::before
+                position: absolute
+                top: 20px
+                left: 0px
+                content: ""
+                width: 1px
+                height: 90px
+                background: linear-gradient(#333, transparent)
+            .category
+              margin-left: 15px
+              font-size: 1.2rem
+              font-weight: 400
+            .contents
+              width: 0
+              height: 0
+              transition: .5s
+              visibility: hidden
+              opacity: 0
+        .swiper-button-prev, .swiper-button-next
+          position: absolute
+          top: -100px
+          border: 1px solid fw.$gray-deep
+          z-index: 100
+        .swiper-button-prev
+          left: 82%
+        .swiper-button-next
+          right: 5%
+        .swiper-scrollbar
+          bottom: 0
+

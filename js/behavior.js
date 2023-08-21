@@ -34,7 +34,6 @@ const frontPageSwiper = new Swiper('.swiper.front-page', {
   // Optional parameters
   direction: 'horizontal',
   // loop: true,
-  slidesPerView: 1,
   slidesPerView: 'auto',
   spaceBetween: 50,
 
@@ -45,25 +44,44 @@ const frontPageSwiper = new Swiper('.swiper.front-page', {
   }
 })
 
-const newsPageSwiper = new Swiper('.swiper.news-page', {
+const geekCommunityPageSwiper = new Swiper('.swiper.geek-community', {
   // Optional parameters
   direction: 'horizontal',
   // loop: true,
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 4,
+  spaceBetween: 30,
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
+  
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
-  },
+  }
 })
 
+const newsPageSwiper = new Swiper('.swiper.news-page', {
+  // Optional parameters
+  direction: 'horizontal',
+  // loop: true,
+  // slidesPerView: 'auto',
+  slidesPerView: 3,
+  spaceBetween: 50,
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  }
+})
 
 
 // 全体 > Contact UsのParallax効果 ////////////////////////////////////////////
