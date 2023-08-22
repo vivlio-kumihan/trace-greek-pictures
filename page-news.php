@@ -8,13 +8,19 @@
     <div class="swiper news-page">
       <ul class="swiper-wrapper news-ul">
         <?php
-        $recent_page = get_query_var('paged') ? get_query_var('paged') : 1;
+        $tag_slug = 'pick-up'; // タグのスラッグをここに入力
+        $tag = get_term_by('slug', $tag_slug, 'post_tag');
         $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => 10,
-          'orderby' => 'date',
-          'paged' => $recent_page,
+          'tag__in' => array($tag->term_id),
+          'posts_per_page' => -1, // すべての記事を表示
         );
+        // $recent_page = get_query_var('paged') ? get_query_var('paged') : 1;
+        // $args = array(
+        //   'post_type' => 'post',
+        //   'posts_per_page' => 10,
+        //   'orderby' => 'date',
+        //   'paged' => $recent_page,
+        // );
         $my_query = new WP_Query($args);
         if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
         ?>

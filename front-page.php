@@ -649,12 +649,12 @@
   </a>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>
-    ご依頼やご相談、<br>
-    採用に関してのお問い合わせはこちら
-  </p>
+<section class="contact-us parallax-frame">
+  <div class="parallax-bg-img one"></div>
+  <div class="border-circle">
+    <h2>Contact Us</h2>
+    <p>ご依頼やご相談、<br>採用に関してのお問い合わせはこちら</p>
+  </div>
 </section>
 
 

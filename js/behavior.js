@@ -9,6 +9,11 @@ if (document.querySelector('body.home')) {
     this.classList.toggle('active')
   })
 }
+// // クリックしたらメニューを広げる
+// const checkYear = document.getElementById('check-year')
+// checkYear.addEventListener('click', function() {
+//   this.classList.toggle('active')
+// })
 
 
 // front-pageページ > service ////////////////////////////////////
